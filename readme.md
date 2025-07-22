@@ -66,16 +66,17 @@ or you can create custom ones as well: see the custommiddleware.js
 
 ## EJS (embaded javascript)
 Is a templating language. this allows us to write js in html  
-
 `app.set("view engine", "ejs")`
+
 Create a folder views and then file with ejs extention
-the we can render a file `res.render('success.ejs', { message: "thank you very much" })`
+the we can render a file
+ `res.render('success.ejs', { A js object here })` 
 
 ### ejs tags 
 
-<% varibale   %> // js to output 
-<% console.log("hello") %> // Js excecute on the server but no output
-<%- <h1> just html here </h1> %> // render as html
-<%% skip the tag  %> // to bypass ejs
-<%# comment  %> // comment 
-<%- include("page1.ejs") %> // link to another ejs file 
+- <% varibale   %> // js to output 
+- <% console.log("hello") %> // Js excecute on the server but no output
+- <%- <para> just html here <para> %> // render as html
+- <%% skip the tag  %> // to bypass ejs
+- <%# comment  %> // comment 
+-<%- include("page1.ejs") %> // link to another ejs file 
